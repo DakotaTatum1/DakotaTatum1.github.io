@@ -1,33 +1,25 @@
-# Dakota Tatum — finance and business analysis portfolio
+# Dakota Tatum | Finance and Business Analysis Portfolio
 
-[Open the portfolio](https://dakotatatum1.github.io/) · [Read the Dunder Mifflin case study](https://dakotatatum1.github.io/dunder-mifflin/) · [Try the dashboard](https://dakotatatum1.github.io/demo/)
+Portfolio site: https://dakotatatum1.github.io/
 
-This first portfolio version features one academic project: a financial reporting system for the fictional Dunder Mifflin business.
+This repository presents selected academic work in financial reporting, business analysis, and reporting automation. The current case study covers a Dunder Mifflin financial reporting simulation.
 
-## Start here
+## Featured case study
 
-- **Case study:** business problem, contribution, accounting decisions, verification, and limitations.
-- **Working dashboard:** company summary, branch explorer, and paper trail with saved October 23, 2026 classroom reporting data.
-- **[Excel workbook](evidence/reporting-workbook.xlsx):** original reporting artifact, copied without changing its formulas or data.
-- **[Verification log](evidence/verification-and-changes.md):** original project checks, dated snapshots, and correction/retest record.
-- **[AI and review record](evidence/ai-and-review-record.md):** assistance received and human responsibilities.
+The Dunder Mifflin project organizes branch-level source records into a controlled reporting workbook and a portable management dashboard.
 
-## Scope and provenance
+- Case study: https://dakotatatum1.github.io/dunder-mifflin/
+- Dashboard: https://dakotatatum1.github.io/demo/
+- Workbook: [evidence/reporting-workbook.xlsx](evidence/reporting-workbook.xlsx)
+- Verification record: [evidence/verification-and-changes.md](evidence/verification-and-changes.md)
+- AI and review record: [evidence/ai-and-review-record.md](evidence/ai-and-review-record.md)
 
-All company figures are fictional classroom data. No real-world business impact or time savings are claimed. Codex assisted with the original project and this portfolio. The student directed the outputs, reviewed displayed results, and requested revisions; this is not represented as unaided programming.
+## Scope
 
-The dashboard files are selected original project artifacts. The portfolio adds navigation and a simulation banner; financial data and calculations are preserved. The visual on the homepage is a new summary of the saved dashboard values. Documentation in `evidence/` is preserved from the project and may include its original submission-review wording.
+The figures are fictional classroom data. The portfolio describes the work performed, the accounting decisions documented, and the review process used. It does not claim measured time savings or production business impact.
 
-## Technical setup
+Codex assisted with the original project and portfolio implementation. The student directed the requirements, reviewed the outputs, and retained responsibility for the accounting conclusions and final presentation.
 
-Static HTML/CSS, hosted with GitHub Pages from `main` at the repository root. No build step or third-party analytics. To preview locally, serve this directory using a static HTTP server.
+## Technical format
 
-The dashboard loads a saved reporting snapshot. To exercise its optional Excel refresh, download the workbook, select it in the dashboard, and save Excel edits before refreshing. This portfolio publication verifies website navigation and the saved dashboard view; it does not claim a fresh full workbook recalculation.
-
-## File guide
-
-- `index.html`: portfolio homepage.
-- `dunder-mifflin/`: detailed case study.
-- `demo/`: working project dashboard and source.
-- `evidence/`: selected workbook and documentation.
-- `assets/`: portfolio styles and screenshot.
+The site is static HTML and CSS hosted through GitHub Pages. The dashboard uses saved reporting data and includes an optional workbook refresh workflow.
