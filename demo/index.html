@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dunder Mifflin | Financial Reporting Dashboard</title>
+    <link rel="stylesheet" href="public/styles.css" />
+  <style>.portfolio-return{display:flex;justify-content:space-between;gap:16px;padding:12px 24px;background:#102a35;color:#fff;font:13px system-ui}.portfolio-return a{color:#fff}.app-shell{min-height:calc(100vh - 44px)}@media(max-width:650px){.portfolio-return{flex-direction:column;gap:4px}}</style></head>
+  <body data-mode="portable"><div class="portfolio-return"><a href="../dunder-mifflin/">&larr; Back to project story</a><span>Academic simulation &middot; October 23, 2026 reporting snapshot</span></div>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand"><span class="brand-mark">DM</span><span>Dunder Mifflin<br /><small>Financial reporting</small></span></div>
+        <nav aria-label="Dashboard sections"><button class="nav-button active" data-view="overview">Company Summary</button><button class="nav-button" data-view="branches">Branch Explorer</button><button class="nav-button" data-view="trail">Paper Trail</button></nav>
+        <div class="sidebar-note"><span class="pulse"></span> Portable dashboard<br /><small>Preloaded reporting package</small></div>
+      </aside>
+      <main class="main-content">
+        <header class="topbar">
+          <div><p class="eyebrow">FINANCIAL REPORTING</p><h1 id="page-title">Company overview</h1></div>
+          <div class="header-actions"><div class="refresh-box"><div class="refresh-status-wrap"><span id="refresh-label">Loading the included reporting package…</span><small class="refresh-note"><strong>Important:</strong> After inputting new data, click <strong>Save</strong> in Excel before clicking Refresh.</small></div><input id="workbook-picker" type="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" hidden /><button id="refresh-button" class="refresh-button">Choose File</button></div></div>
+        </header>
+        <section id="overview-view" class="view active"></section><section id="branches-view" class="view"></section><section id="trail-view" class="view"></section>
+      </main>
+    </div>
+    <script src="portable-data.js"></script>
+    <script src="portable-xlsx-loader.js"></script>
+    <script src="public/app.js"></script>
+  </body>
+</html>
